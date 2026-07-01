@@ -1,6 +1,6 @@
 # RagePvP Network
 
-The official website for **RagePvP Network** — a competitive Minecraft PvP server built for Java Edition.
+The official website for **RagePvP Network**.
 
 ## Game Modes
 
