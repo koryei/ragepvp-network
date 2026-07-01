@@ -1,0 +1,882 @@
+<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    
+    <meta name="description" content="RagePvP Network is the premier PvP server for Minecraft: Java Edition. Play duels across game modes including Mace, Crystal, Sword, Fireball Fight, and more.">
+    
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet"></noscript>
+    <link href="css/new-style.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" type="image/png">
+    <link rel="canonical" href="https://ragepvp.net/">
+    <title>Home | RagePvP Network</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RagePvP Network">
+    <meta property="og:title" content="Home | RagePvP Network">
+    <meta property="og:description" content="RagePvP Network is the premier PvP server for Minecraft: Java Edition. Play duels across game modes including Mace, Crystal, Sword, Fireball Fight, and more.">
+    <meta property="og:image" content="images/ragepvp_logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@RagePvPNET">
+    <meta name="twitter:title" content="Home | RagePvP Network">
+    <meta name="twitter:description" content="RagePvP Network is the premier PvP server for Minecraft: Java Edition. Play duels across game modes including Mace, Crystal, Sword, Fireball Fight, and more.">
+    <meta name="twitter:image" content="images/ragepvp_logo.png">
+    <script>
+        (function() {
+            var versionKey = 'minecraft_version';
+            function normalizeVersion(version) {
+                return version === 'classic' || version === 'modern' ? version : null;
+            }
+            function readCookie(name) {
+                var parts = document.cookie ? document.cookie.split('; ') : [];
+                for (var i = 0; i < parts.length; i++) {
+                    var pair = parts[i].split('=');
+                    if (decodeURIComponent(pair[0]) === name) {
+                        return decodeURIComponent(pair.slice(1).join('='));
+                    }
+                }
+                return null;
+            }
+            window.getMinecraftVersionPreference = function() {
+                return normalizeVersion(readCookie(versionKey)) || 'modern';
+            };
+            window.setMinecraftVersionPreference = function(version) {
+                version = normalizeVersion(version);
+                if (!version) {
+                    return;
+                }
+                document.cookie = versionKey + '=' + encodeURIComponent(version) + ';path=/;max-age=31536000;samesite=lax';
+            };
+            window.syncModeToggleSlider = function(toggle, activeSelector, sliderSelector) {
+                if (!toggle) {
+                    return;
+                }
+                var slider = toggle.querySelector(sliderSelector || '.mode-toggle-slider');
+                var active = toggle.querySelector(activeSelector || '.active');
+                if (!slider || !active) {
+                    return;
+                }
+                slider.style.left = active.offsetLeft + 'px';
+                slider.style.width = active.offsetWidth + 'px';
+            };
+        })();
+    </script>
+    
+</head>
+<body>
+        
+<link rel="preload" as="image" href="images/hero-bg.jpg" fetchpriority="high">
+<div class="page-wrapper">
+    
+    
+    
+    
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="https://discord.gg/ragepvpnet" target="_blank" class="nav-discord-btn">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+            </div>
+            <a href="/" class="header-logo">
+                <img src="images/ragepvp_logo.png" alt="RagePvP Network" class="logo-desktop" style="height: 48px !important; width: auto !important;" width="1199" height="546">
+                <img src="images/ragepvp_logo.png" alt="RagePvP Network" class="logo-mobile" style="height: 40px !important; width: auto !important;">
+            </a>
+            <div class="header-right">
+                <a href="https://store.ragepvp.net/" class="nav-store-btn" id="nav-store">
+                    <i class="fas fa-shopping-bag"></i> Store
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="/support" class="mobile-nav-link">
+            <i class="fas fa-headset"></i> Support
+        </a>
+        <a href="https://store.ragepvp.net/" class="mobile-nav-link">
+            <i class="fas fa-shopping-bag"></i> Store
+        </a>
+        <div class="mobile-nav-divider"></div>
+        <a href="https://discord.gg/ragepvpnet" target="_blank" class="mobile-nav-link">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+    </nav>
+
+    <main class="main-content landing-page-content has-mmc-page-bg">
+        <div class="mmc-page-bg" style="background-image: url('images/hero-bg.jpg')"></div>
+        <section class="hero hero-fullscreen">
+            <div class="hero-background">
+                <div class="hero-carousel">
+                    <div class="hero-slide active" style="background-image: url('images/bg1.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/bg2.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/bg3.png');"></div>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-carousel-dots">
+                    <button class="hero-dot active" data-index="0"></button>
+                    <button class="hero-dot" data-index="1"></button>
+                    <button class="hero-dot" data-index="2"></button>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in-up">
+                    <span class="hero-title-main">RAGEPVP NETWORK</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-up animate-delay-100">
+                    One of Eaglercraft's most iconic servers, rebuilt for a modern experience.
+                </p>
+                <div class="hero-cta animate-fade-in-up animate-delay-200">
+                    <button class="btn-play">
+                        <i class="fas fa-play"></i>
+                        PLAY NOW
+                    </button>
+                </div>
+                <div class="online-indicator animate-fade-in-up animate-delay-200" id="server-status">
+                    <span class="online-dot" id="server-dot"></span>
+                    <span id="server-label">— Online</span>
+                </div>
+            </div>
+        </section>
+        <section class="gamemodes-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">What We Offer</h2>
+                    <p class="section-subtitle">Pick a mode and start playing. Something for everyone.</p>
+                </div>
+                <div class="gamemodes-grid">
+                    <div class="gamemode-card gamemode-mace" data-aos="fade-up" data-aos-delay="0">
+                        <div class="gamemode-image">
+                            <img src="images/Mace.png" alt="Mace" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-hammer"></i>
+                            <h3 class="gamemode-title">Mace PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-crystal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="gamemode-image">
+                            <img src="images/Crystal.png" alt="Crystal" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-gem"></i>
+                            <h3 class="gamemode-title">Crystal PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-sword" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gamemode-image">
+                            <img src="images/Sword.png" alt="Sword" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <svg class="gamemode-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path><path d="M13 19l6-6"></path><path d="M16 16l4 4"></path><path d="M19 21l2-2"></path></svg>
+                            <h3 class="gamemode-title">Sword PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-diamondpot" data-aos="fade-up" data-aos-delay="300">
+                        <div class="gamemode-image">
+                            <img src="images/DiamondPotPvP.png" alt="Pot PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-flask"></i>
+                            <h3 class="gamemode-title">Pot PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-cart" data-aos="fade-up" data-aos-delay="400">
+                        <div class="gamemode-image">
+                            <img src="images/CartPvP.png" alt="Cart PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-train"></i>
+                            <h3 class="gamemode-title">Cart PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-spear" data-aos="fade-up" data-aos-delay="500">
+                        <div class="gamemode-image">
+                            <img src="images/SpearPvP.png" alt="Spear PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-khanda"></i>
+                            <h3 class="gamemode-title">Spear PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-uhc" data-aos="fade-up" data-aos-delay="600">
+                        <div class="gamemode-image">
+                            <img src="images/UHCPvP.png" alt="UHC PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-skull"></i>
+                            <h3 class="gamemode-title">UHC PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-netherpot" data-aos="fade-up" data-aos-delay="700">
+                        <div class="gamemode-image">
+                            <img src="images/NetherPotPvP.jpg" alt="NethOP PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-fire"></i>
+                            <h3 class="gamemode-title">NethOP PvP</h3>
+                        </div>
+                    </div>
+                    <div class="gamemode-card gamemode-axe" data-aos="fade-up" data-aos-delay="800">
+                        <div class="gamemode-image">
+                            <img src="images/AxePvP.png" alt="Axe PvP" loading="lazy" width="1536" height="1024">
+                        </div>
+                        <div class="gamemode-header">
+                            <i class="fas fa-axe"></i>
+                            <h3 class="gamemode-title">Axe PvP</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamemodes-cta" data-aos="fade-up">
+                </div>
+            </div>
+        </section>
+        <section class="community-section">
+            <div class="container">
+                <div class="community-hero-grid">
+                    <div class="community-hero-left" data-aos="fade-right">
+                        <h2 class="community-hero-title">
+                            Stay connected with the RagePvP Network
+                            <span class="community-hero-title-accent">community</span>
+                        </h2>
+                        <p class="community-hero-subtitle">Join us across all our social platforms for the latest updates, clips, announcements, and community highlights.</p>
+                        <a href="https://discord.gg/ragepvpnet" target="_blank" class="community-hero-btn">
+                            <i class="fab fa-discord"></i> Join the community <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="community-hero-right" data-aos="fade-left">
+                        <a href="https://discord.gg/ragepvpnet" target="_blank" class="social-row discord">
+                            <div class="social-row-icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <div class="social-row-info">
+                                <span class="social-row-name">Discord</span>
+                                <span class="social-row-desc">Chat with players</span>
+                            </div>
+                        </a>
+                        <a href="https://x.com/RagePvPNET" target="_blank" class="social-row twitter">
+                            <div class="social-row-icon">
+                                <i class="fab fa-x-twitter"></i>
+                            </div>
+                            <div class="social-row-info">
+                                <span class="social-row-name">X / Twitter</span>
+                                <span class="social-row-desc">Follow for updates</span>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@RagePvPNET" target="_blank" class="social-row youtube">
+                            <div class="social-row-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-row-info">
+                                <span class="social-row-name">YouTube</span>
+                                <span class="social-row-desc">Watch highlights</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        (function () {
+            var slides = document.querySelectorAll('.hero-slide');
+            var dots = document.querySelectorAll('.hero-dot');
+            var current = 0;
+            var timer;
+
+            function goTo(index) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = index;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
+
+            function next() {
+                goTo((current + 1) % slides.length);
+            }
+
+            function startTimer() {
+                timer = setInterval(next, 5000);
+            }
+
+            dots.forEach(function (dot) {
+                dot.addEventListener('click', function () {
+                    clearInterval(timer);
+                    goTo(parseInt(this.getAttribute('data-index')));
+                    startTimer();
+                });
+            });
+
+            startTimer();
+        })();
+        </script>
+        <div id="ip-toast" class="ip-toast">
+            <div class="ip-toast-icon"><i class="fas fa-check"></i></div>
+            <div class="ip-toast-text">
+                <span class="ip-toast-title">IP Copied!</span>
+                <span class="ip-toast-sub">ragepvp.net copied to clipboard!</span>
+            </div>
+            <div class="ip-toast-progress"></div>
+        </div>
+        <script>
+        (function () {
+            var playBtn = document.querySelector('.btn-play');
+            var toast = document.getElementById('ip-toast');
+            var toastTimer, progressTimer;
+
+            function showToast() {
+                clearTimeout(toastTimer);
+                clearInterval(progressTimer);
+                var bar = toast.querySelector('.ip-toast-progress');
+                bar.style.transition = 'none';
+                bar.style.width = '100%';
+                toast.classList.remove('hide');
+                toast.classList.add('show');
+                requestAnimationFrame(function () {
+                    requestAnimationFrame(function () {
+                        bar.style.transition = 'width 3.5s linear';
+                        bar.style.width = '0%';
+                    });
+                });
+                toastTimer = setTimeout(function () {
+                    toast.classList.add('hide');
+                    setTimeout(function () {
+                        toast.classList.remove('show', 'hide');
+                    }, 400);
+                }, 3500);
+            }
+
+            function copyIP() {
+                var ip = 'ragepvp.net';
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(ip).catch(function () {});
+                } else {
+                    var ta = document.createElement('textarea');
+                    ta.value = ip;
+                    ta.style.position = 'fixed';
+                    ta.style.opacity = '0';
+                    document.body.appendChild(ta);
+                    ta.focus();
+                    ta.select();
+                    try { document.execCommand('copy'); } catch(e) {}
+                    document.body.removeChild(ta);
+                }
+                showToast();
+            }
+
+            if (playBtn) {
+                playBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    copyIP();
+                });
+            }
+            function updatePlayerCount() {
+                fetch('https://api.mcsrvstat.us/2/ragepvp.net')
+                    .then(function (res) { return res.json(); })
+                    .then(function (data) {
+                        var dot = document.getElementById('server-dot');
+                        var label = document.getElementById('server-label');
+                        if (!dot || !label) return;
+                        if (data && data.online && data.players && typeof data.players.online === 'number') {
+                            dot.style.background = '#22c55e';
+                            dot.style.boxShadow = '0 0 8px rgba(34,197,94,0.7)';
+                            label.style.color = '';
+                            label.textContent = data.players.online.toLocaleString() + ' Online';
+                        } else {
+                            dot.style.background = '#ef4444';
+                            dot.style.boxShadow = '0 0 8px rgba(239,68,68,0.7)';
+                            label.style.color = '#ef4444';
+                            label.textContent = 'Offline';
+                        }
+                    })
+                    .catch(function () {
+                        var dot = document.getElementById('server-dot');
+                        var label = document.getElementById('server-label');
+                        if (dot) { dot.style.background = '#ef4444'; dot.style.boxShadow = '0 0 8px rgba(239,68,68,0.7)'; }
+                        if (label) { label.style.color = '#ef4444'; label.textContent = 'Offline'; }
+                    });
+            }
+            updatePlayerCount();
+            setInterval(updatePlayerCount, 60000);
+        })();
+        </script>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="/" class="footer-logo">
+                <img src="images/ragepvp_logo.png" alt="RagePvP Network" width="906" height="475">
+            </a>
+            <nav class="footer-nav">
+                <a href="https://store.ragepvp.net">Store</a>
+                <a href="https://discord.gg/ragepvpnet" target="_blank">Discord</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://discord.gg/ragepvpnet" target="_blank" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://x.com/RagePvPNET" target="_blank" title="X / Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@RagePvPNET" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025–2026 RagePvP Network. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script defer="" src="js/jquery.timeago.min.js"></script>
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText('ragepvp.net').then(() => {
+                const btn = document.querySelector('.btn-ip span');
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const nav = document.getElementById('mobile-nav');
+            const overlay = document.getElementById('mobile-nav-overlay');
+            function openNav() {
+                nav.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeNav() {
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            if (toggle) {
+                toggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    nav.classList.contains('active') ? closeNav() : openNav();
+                });
+            }
+            if (overlay) {
+                overlay.addEventListener('click', closeNav);
+            }
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    closeNav();
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') { closeNav(); }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const userMenu = document.getElementById('user-menu');
+            const userDropdown = document.getElementById('user-dropdown');
+            if (userMenu && userDropdown) {
+                userMenu.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    userMenu.classList.toggle('open');
+                    userDropdown.classList.toggle('active');
+                });
+                document.addEventListener('click', function() {
+                    userMenu.classList.remove('open');
+                    userDropdown.classList.remove('active');
+                });
+            }
+            function refreshTimeago() {
+                if (typeof $ !== 'undefined' && typeof $.fn.timeago !== 'undefined') {
+                    $.timeago.settings.allowFuture = true;
+                    $.timeago.settings.allowPast = true;
+                    $.timeago.settings.cutoff = 0;
+                    $('time.timeago').timeago();
+                }
+            }
+            window.refreshTimeago = refreshTimeago;
+            window.addEventListener('load', function() {
+                refreshTimeago();
+            });
+        });
+    </script>
+    <script defer="" src="js/search.js"></script>
+    <script>
+        (function () {
+            var NAV_ROUTES = {
+                '/news':         'news',
+                '/leaderboards': 'leaderboards',
+                '/support':      'support'
+            };
+            var SELF_ROUTING_GROUPS = new Set(['leaderboards']);
+            var FULL_LOAD_PREFIXES = ['/ap'];
+            function getActivePage(pathname) {
+                for (var prefix in NAV_ROUTES) {
+                    if (pathname.startsWith(prefix)) return NAV_ROUTES[prefix];
+                }
+                return '';
+            }
+            function updateNavActive(pathname) {
+                var active = getActivePage(pathname);
+                document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(function (link) {
+                    var id = link.id || '';
+                    var href = link.getAttribute('href') || '';
+                    var isActive = active && (id === 'nav-' + active || href.includes('/' + active));
+                    link.classList.toggle('active', isActive);
+                });
+            }
+            function rerunScripts(container) {
+                container.querySelectorAll('script').forEach(function (oldScript) {
+                    var s = document.createElement('script');
+                    Array.from(oldScript.attributes).forEach(function (a) { s.setAttribute(a.name, a.value); });
+                    s.textContent = oldScript.textContent;
+                    oldScript.parentNode.replaceChild(s, oldScript);
+                });
+            }
+            function runScriptsFrom(source, target) {
+                source.querySelectorAll('script').forEach(function (oldScript) {
+                    var s = document.createElement('script');
+                    Array.from(oldScript.attributes).forEach(function (a) { s.setAttribute(a.name, a.value); });
+                    s.textContent = oldScript.textContent;
+                    target.appendChild(s);
+                    s.remove();
+                });
+            }
+            function isInternal(href) {
+                try {
+                    var url = new URL(href, location.origin);
+                    return url.origin === location.origin;
+                } catch (e) { return false; }
+            }
+            function dataElement(root, name, value) {
+                var elements = root.querySelectorAll('[data-' + name + ']');
+                for (var i = 0; i < elements.length; i++) {
+                    if (elements[i].getAttribute('data-' + name) === value) return elements[i];
+                }
+                return null;
+            }
+            function canUsePartialTransition(partialRoot, pathname) {
+                var pattern = partialRoot ? partialRoot.getAttribute('data-ajax-partial-path') : null;
+                return pattern && new RegExp(pattern, 'i').test(pathname);
+            }
+            function lockSwapHeight(element) {
+                if (!element) return '';
+                var height = element.offsetHeight;
+                if (height > 0) {
+                    element.style.minHeight = height + 'px';
+                    return height + 'px';
+                }
+                return '';
+            }
+            function unlockSwapHeight(element) {
+                if (!element) return;
+                element.style.minHeight = '';
+            }
+            function beginPartialTransition(main) {
+                var partialRoot = main.querySelector('[data-ajax-partial-path]');
+                if (!partialRoot) return null;
+                var content = partialRoot.querySelector('[data-ajax-swap]');
+                if (!content) return null;
+                var minHeight = lockSwapHeight(content);
+
+                content.style.transition = 'opacity 120ms ease, transform 120ms ease';
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(5px)';
+
+                return { partialRoot: partialRoot, content: content, swapKey: content.getAttribute('data-ajax-swap'), startedAt: Date.now(), minHeight: minHeight };
+            }
+            function restorePartialTransition(partial) {
+                if (!partial || !partial.content || !partial.content.parentNode) return;
+                partial.content.style.transition = 'opacity 180ms ease, transform 180ms ease';
+                partial.content.style.opacity = '1';
+                partial.content.style.transform = 'translateY(0)';
+                setTimeout(function () { unlockSwapHeight(partial.content); }, 220);
+            }
+            function partialTransition(main, newMain, href, pushState, partial) {
+                var partialRoot = partial ? partial.partialRoot : main.querySelector('[data-ajax-partial-path]');
+                var newPartialRoot = newMain.querySelector('[data-ajax-partial-path]');
+                if (!partialRoot || !newPartialRoot) {
+                    restorePartialTransition(partial);
+                    return false;
+                }
+
+                var layout = partialRoot.querySelector('[data-ajax-layout]');
+                var newLayout = newPartialRoot.querySelector('[data-ajax-layout]');
+                var content = partial ? partial.content : partialRoot.querySelector('[data-ajax-swap]');
+                var swapKey = partial ? partial.swapKey : (content ? content.getAttribute('data-ajax-swap') : null);
+                var newContent = swapKey ? dataElement(newPartialRoot, 'ajax-swap', swapKey) : null;
+                if (!layout || !newLayout || !content || !newContent) {
+                    restorePartialTransition(partial);
+                    return false;
+                }
+
+                var delay = partial ? Math.max(0, 120 - (Date.now() - partial.startedAt)) : 0;
+                setTimeout(function () {
+                    document.title = newMain.ownerDocument.title;
+                    if (pushState !== false) history.pushState({ href: href }, document.title, href);
+                    partialRoot.className = newPartialRoot.className;
+                    partialRoot.style.cssText = newPartialRoot.style.cssText;
+                    layout.className = newLayout.className;
+                    Array.prototype.forEach.call(partialRoot.querySelectorAll('[data-ajax-preserve]'), function (element) {
+                        var key = element.getAttribute('data-ajax-preserve');
+                        var replacement = dataElement(newPartialRoot, 'ajax-preserve', key);
+                        if (replacement) {
+                            element.className = replacement.className;
+                            element.style.cssText = replacement.style.cssText;
+                        }
+                    });
+                    if (partial && partial.minHeight) {
+                        newContent.style.minHeight = partial.minHeight;
+                    }
+                    content.replaceWith(newContent);
+                    newContent.style.transition = 'none';
+                    newContent.style.opacity = '0';
+                    newContent.style.transform = 'translateY(-5px)';
+                    runScriptsFrom(newMain, main);
+                    requestAnimationFrame(function () {
+                        requestAnimationFrame(function () {
+                            newContent.style.transition = 'opacity 180ms ease, transform 180ms ease';
+                            newContent.style.opacity = '1';
+                            newContent.style.transform = 'translateY(0)';
+                            if (window.refreshTimeago) window.refreshTimeago();
+                            if (typeof AOS !== 'undefined') AOS.refresh();
+                            setTimeout(function () { unlockSwapHeight(newContent); }, 220);
+                        });
+                    });
+                    window.scrollTo(0, 0);
+                }, delay);
+                return true;
+            }
+            function sameGroup(a, b) {
+                for (var prefix in NAV_ROUTES) {
+                    if (a.startsWith(prefix) && b.startsWith(prefix)) return true;
+                }
+                return false;
+            }
+            function requiresFullLoad(pathname) {
+                return FULL_LOAD_PREFIXES.some(function (prefix) {
+                    return pathname === prefix || pathname.startsWith(prefix + '/');
+                });
+            }
+            function rememberLeaderboardPath(pathname) {
+                var versionMatch = pathname.match(/^\/leaderboards\/(classic|modern)(?:\/|$)/);
+                if (!versionMatch) {
+                    return;
+                }
+                var version = versionMatch[1];
+                var gamemodeMatch = pathname.match(/^\/leaderboards\/(?:classic|modern)\/([^\/]+)/);
+                if (gamemodeMatch) {
+                    localStorage.setItem('lb_last_gamemode_' + version, gamemodeMatch[1]);
+                }
+                if (window.setMinecraftVersionPreference) {
+                    window.setMinecraftVersionPreference(version);
+                }
+            }
+            function readCookie(name) {
+                var parts = document.cookie ? document.cookie.split('; ') : [];
+                for (var i = 0; i < parts.length; i++) {
+                    var pair = parts[i].split('=');
+                    if (decodeURIComponent(pair[0]) === name) {
+                        return decodeURIComponent(pair.slice(1).join('='));
+                    }
+                }
+                return null;
+            }
+            function writeCookie(name, value) {
+                document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + ';path=/;max-age=31536000;samesite=lax';
+            }
+            function rememberStaffPath(pathname) {
+                var ticketsMatch = pathname.match(/^\/staff\/tickets\/(all|old|open|closed|unassigned|high|medium|low)(?:\/|$)/);
+                if (ticketsMatch) {
+                    writeCookie('staff_tickets_category', ticketsMatch[1]);
+                    return;
+                }
+                var applicationsMatch = pathname.match(/^\/staff\/applications\/(all|new|old|accepted|denied|needs_response)(?:\/|$)/);
+                if (applicationsMatch) {
+                    writeCookie('staff_applications_category', applicationsMatch[1]);
+                }
+            }
+            function staffPathFromPreference(pathname) {
+                if (pathname === '/staff/tickets' || pathname === '/staff/tickets/all' || pathname === '/staff/tickets/all/1') {
+                    return '/staff/tickets/' + (readCookie('staff_tickets_category') || 'all') + '/1';
+                }
+                if (pathname === '/staff/applications' || pathname === '/staff/applications/all' || pathname === '/staff/applications/all/1') {
+                    return '/staff/applications/' + (readCookie('staff_applications_category') || 'all') + '/1';
+                }
+                return pathname;
+            }
+            function leaderboardPathFromPreference(pathname) {
+                var version = window.getMinecraftVersionPreference ? window.getMinecraftVersionPreference() : 'modern';
+                var gamemode = localStorage.getItem('lb_last_gamemode_' + version);
+                if (gamemode) {
+                    return '/leaderboards/' + version + '/' + gamemode;
+                }
+                if (pathname.match(/^\/leaderboards\/(classic|modern)(?:\/|$)/)) {
+                    return pathname.replace(/^\/leaderboards\/(classic|modern)/, '/leaderboards/' + version);
+                }
+                return '/leaderboards/' + version;
+            }
+            function navigate(href, pushState, allowPartial) {
+                var main = document.querySelector('.main-content');
+                if (!main) { window.location.href = href; return; }
+                var hasPartialScope = allowPartial && !!main.querySelector('[data-ajax-partial-path]');
+                var partial = hasPartialScope ? beginPartialTransition(main) : null;
+                if (!partial) {
+                    lockSwapHeight(main);
+                }
+                if (!hasPartialScope) {
+                    main.style.transition = 'opacity 120ms ease, transform 120ms ease';
+                    main.style.opacity = '0';
+                    main.style.transform = 'translateY(5px)';
+                }
+                var loaderHost = partial ? partial.content : main;
+                var settled = false;
+                var placeholder = null;
+                var placeholderTimer = setTimeout(function () {
+                    if (settled || !loaderHost) return;
+                    loaderHost.style.transform = 'none';
+                    loaderHost.innerHTML = '';
+                    placeholder = document.createElement('div');
+                    placeholder.className = 'ajax-loader';
+                    placeholder.innerHTML = '<div class="ajax-loader-spinner"></div>';
+                    document.body.appendChild(placeholder);
+                    loaderHost.style.transition = 'opacity 200ms ease';
+                    requestAnimationFrame(function () {
+                        loaderHost.style.opacity = '1';
+                    });
+                }, 280);
+                function clearPlaceholder() {
+                    clearTimeout(placeholderTimer);
+                    if (placeholder && placeholder.parentNode) {
+                        placeholder.parentNode.removeChild(placeholder);
+                    }
+                    placeholder = null;
+                }
+                fetch(href, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                    .then(function (r) {
+                        var finalHref = r.url || href;
+                        return r.text().then(function (html) { return { html: html, href: finalHref }; });
+                    })
+                    .then(function (result) {
+                        settled = true;
+                        clearPlaceholder();
+                        var doc = new DOMParser().parseFromString(result.html, 'text/html');
+                        var newMain = doc.querySelector('.main-content');
+                        if (!newMain) { window.location.href = result.href; return; }
+                        if (partial && partialTransition(main, newMain, result.href, pushState, partial)) {
+                            updateNavActive(new URL(result.href, location.origin).pathname);
+                            return;
+                        }
+                        if (partial) {
+                            lockSwapHeight(main);
+                        }
+                        main.className = newMain.className;
+                        main.innerHTML = newMain.innerHTML;
+                        document.title = doc.title;
+                        if (pushState !== false) history.pushState({ href: result.href }, doc.title, result.href);
+                        var url = new URL(result.href, location.origin);
+                        if (url.pathname.startsWith('/leaderboards')) {
+                            rememberLeaderboardPath(url.pathname);
+                        }
+                        rememberStaffPath(url.pathname);
+                        updateNavActive(url.pathname);
+                        main.style.transition = 'none';
+                        main.style.opacity = '0';
+                        main.style.transform = 'translateY(-5px)';
+                        requestAnimationFrame(function () {
+                            requestAnimationFrame(function () {
+                                main.style.transition = 'opacity 180ms ease, transform 180ms ease';
+                                main.style.opacity = '1';
+                                main.style.transform = 'translateY(0)';
+                                rerunScripts(main);
+                                if (window.refreshTimeago) window.refreshTimeago();
+                                if (typeof AOS !== 'undefined') AOS.refresh();
+                                setTimeout(function () { unlockSwapHeight(main); }, 220);
+                            });
+                        });
+                        window.scrollTo(0, 0);
+                    })
+                    .catch(function () {
+                        settled = true;
+                        clearPlaceholder();
+                        restorePartialTransition(partial);
+                        unlockSwapHeight(main);
+                        window.location.href = href;
+                    });
+            }
+            window.navigate = function(href) {
+                var main = document.querySelector('.main-content');
+                var url = new URL(href, location.origin);
+                var staffTarget = staffPathFromPreference(url.pathname);
+                if (staffTarget !== url.pathname) {
+                    url = new URL(staffTarget, location.origin);
+                }
+                var partialRoot = main ? main.querySelector('[data-ajax-partial-path]') : null;
+                updateNavActive(url.pathname);
+                navigate(url.href, true, canUsePartialTransition(partialRoot, url.pathname));
+            };
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest('a');
+                if (!link || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+                if (link.target === '_blank') return;
+                var href = link.href;
+                if (!href || !isInternal(href)) return;
+                var url = new URL(href, location.origin);
+                if (url.hash) return;
+                if (requiresFullLoad(url.pathname) || requiresFullLoad(location.pathname)) return;
+                if (sameGroup(location.pathname, url.pathname)) {
+                    var currentGroup = getActivePage(location.pathname);
+                    if (SELF_ROUTING_GROUPS.has(currentGroup)) {
+                        if (link.classList.contains('lb-mode-btn')) return;
+                        if ((url.pathname === '/leaderboards' || url.pathname === '/leaderboards/modern' || url.pathname === '/leaderboards/classic') && currentGroup === 'leaderboards') {
+                            e.preventDefault();
+                            var target = leaderboardPathFromPreference(url.pathname);
+                            if (target !== url.pathname) {
+                                updateNavActive(new URL(target, location.origin).pathname);
+                                navigate(target, true, false);
+                            }
+                        }
+                        return;
+                    }
+                }
+                if (getActivePage(location.pathname) !== 'leaderboards' && (url.pathname === '/leaderboards' || url.pathname === '/leaderboards/modern' || url.pathname === '/leaderboards/classic')) {
+                    var target = leaderboardPathFromPreference(url.pathname);
+                    if (target !== url.pathname) {
+                        href = location.origin + target;
+                    }
+                }
+                var staffTarget = staffPathFromPreference(url.pathname);
+                if (!link.classList.contains('sort-item') && staffTarget !== url.pathname) {
+                    href = location.origin + staffTarget;
+                }
+                e.preventDefault();
+                updateNavActive(new URL(href, location.origin).pathname);
+                var main = document.querySelector('.main-content');
+                var partialRoot = main ? main.querySelector('[data-ajax-partial-path]') : null;
+                navigate(href, true, canUsePartialTransition(partialRoot, new URL(href, location.origin).pathname));
+            });
+            window.addEventListener('popstate', function (e) {
+                var main = document.querySelector('.main-content');
+                var partialRoot = main ? main.querySelector('[data-ajax-partial-path]') : null;
+                navigate(location.href, false, canUsePartialTransition(partialRoot, location.pathname));
+            });
+        })();
+    </script>
+    <script src="js/aos.js"></script>
+    <script>AOS.init({ duration: 400, easing: 'ease-out', once: true, offset: 60 });</script>
+
+
+</body></html>
